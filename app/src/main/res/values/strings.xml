@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Rialtor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="filter">Filter</string>
+    <string name="landing">Landing</string>
+    <string name="details">Details</string>
+    <string name="map">Map</string>
+    <string name="chat">Chat</string>
+    <string name="to_landing_button">To Landing</string>
+    <string name="to_details_button">To Details</string>
+    <string name="to_map_button">To Map</string>
+    <string name="to_chat_button">To Chat</string>
+    <string name="filter_label">Search</string>
+    <string name="landing_label">Realtor</string>
+    <string name="details_label">Details</string>
+    <string name="map_label">Map</string>
+    <string name="chat_label">Chat</string>
+    <string name="search_menu_item">search</string>
+    <string name="new_menu_item">new</string>
+    <string name="main_text">The adapter needs the layout for one item in the list. All the items use the same layout. You need to specify that list item layout in a separate layout resource file, because it is used by the adapter, separately from the RecyclerView.</string>
+    <string name="main_image_desc">main_image_desc</string>
+</resources>

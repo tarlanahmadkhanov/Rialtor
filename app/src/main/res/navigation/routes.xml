@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routes.xml"
+    app:startDestination="@id/landingFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.ta.rialtor.ui.FilterFragment"
+        android:label="@string/filter_label"
+        tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.ta.rialtor.ui.LandingFragment"
+        android:label="@string/landing_label"
+        tools:layout="@layout/fragment_landing">
+        <action
+            android:id="@+id/action_landingFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_filterFragment2"
+            app:destination="@id/filterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.ta.rialtor.ui.DetailsFragment"
+        android:label="@string/details_label"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/action_detailsFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_detailsFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.ta.rialtor.ui.MapFragment"
+        android:label="@string/map_label"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.ta.rialtor.ui.ChatFragment"
+        android:label="@string/chat_label"
+        tools:layout="@layout/fragment_chat" />
+</navigation>
